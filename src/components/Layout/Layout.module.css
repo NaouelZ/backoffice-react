@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+  }
+  
+  .dashboard {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+  }
+ 
+  .header{
+      display: flex;
+      padding: 1rem 4rem;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .headerLine {
+    border-bottom: 1px solid lightblue;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .header>:nth-child(1)
+  {
+      font-size: 1.2rem;
+  }
+
+  .header>img {
+    height: 50px;
+  }
+
+  .profile{
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .profile>img{
+      height: 80px;
+      width: 80px;
+  }
+  .details{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0.15rem;
+  }
+  
+  .details>:nth-child(1)
+  {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--dark-blue);
+      margin: 0;
+  }
+
+  .details>:nth-child(2)
+  {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: lightblue;
+  }
+
+  .content{
+      margin: auto;
+      display: flex;
+      height: 100%;
+      /* align-items: center; */
+      /* uncomment the aic, and make mt -4rem */
+      margin-top: 4rem;
+  }
+  .content>div{
+      width: 100%;
+      min-width: 75vh
+  }

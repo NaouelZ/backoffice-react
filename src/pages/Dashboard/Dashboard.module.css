@@ -1,0 +1,113 @@
+.container {
+    width: 100%;
+    max-width: 130rem;
+    padding: 0rem 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  
+  @media only screen and (max-width: 1250px)  {
+    .container {
+      flex-direction: row;
+    }
+  }
+
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .head > .subTitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--dark-blue);
+  }
+  
+  .dashboardHead {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .dashboardHead > .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .head > :nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+  }
+  
+  .card{
+    display: flex;
+    border-radius: 0.85rem;
+    flex: 1;
+    /* background-color: #F0FCFC; */
+    padding: 0.5rem 1rem;
+    color: #445e7f;
+  }
+  
+  .card > .cardLeft {
+    max-width: 50%;
+  }
+
+  .card > .cardRight {
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 1rem;
+
+  }
+
+  .cardHead{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .cardHead>:nth-child(2){
+    margin-left: 1.5rem;
+    font-size: 0.8rem;
+    color: var(--green);
+  }
+  
+    .cardAmount {
+        display: flex;
+    }
+
+  .cardAmount>:nth-child(1)
+  {
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    bottom: 5px;
+  }
+  
+  
+  .cardAmount>:nth-child(2)
+  {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 8px;
+  }
+
+  .cardAmount>:nth-child(3){
+    margin-left: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--green);
+    align-self: center;
+    font-weight: 500;
+  }

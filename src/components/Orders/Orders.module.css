@@ -1,0 +1,128 @@
+.container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 75%;
+    color: var(--dark-blue);
+    max-width: fit-content;
+  }
+  
+.ordersTable {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.ordersTable thead tr {
+  color: #ffffff;
+  text-align: left;
+  border-bottom: 1px rgb(248, 245, 245) solid;
+  border-top: 1px rgb(248, 245, 245) solid;
+  color: rgb(209, 191, 191);
+}
+
+.orderTag {
+  background-color: #cdf3ed;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #0b816a;
+}
+
+.orderTagPending {
+  background-color: #f5deab;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #f8b90b;
+}
+
+.ordersTable th,
+.ordersTable td {
+    padding: 12px 15px;
+}
+
+.ordersTable tbody tr td {
+  font-weight: 600;
+}
+
+.ordersTable tbody tr>:nth-child(2) {
+  font-weight: 800;
+}
+
+
+.orderContainer { 
+  background-color: white;
+  padding: 2rem 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .head > img {
+    width: 2rem;
+  }
+
+  .stat {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(247, 242, 245);
+    border-radius: 0.85rem;
+  }
+
+  .stat > :nth-child(1) {
+    font-size: 0.8rem;
+  }
+  .stat > :nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .orders {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  .order>div{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      color: var(--dark-blue);
+      font-size: 0.85rem;  }
+  
+  .order>:nth-child(1)
+  {
+      margin-bottom: 0.8rem;
+  }
+  .order>:nth-child(1)>:nth-child(1)
+  {
+      font-size: 1rem;
+  }
+  .order>:nth-child(1)>:nth-child(2)
+  {
+      font-size: 0.8rem;
+      color: var(--green);
+  }
+  .orderChart{
+      width: 100%;
+  }
+  .orderChart>:nth-child(1)
+  {
+      text-align: center;
+  }
+  
